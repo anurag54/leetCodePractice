@@ -8,7 +8,7 @@ public class sumOfAllElements {
 		}
 		return sum;
 	}
-	
+
 	public static void main(String[] args) {	
 		int result = sumOfAllElements(new int[] {1, 2, 3, 4, 5});
 		System.out.println("The sum of all elements in the array is: " + result);
