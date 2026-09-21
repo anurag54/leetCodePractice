@@ -9,7 +9,7 @@ public class smallestElementInArray {
 			}
 		}
 		return smallest;
-		
+
 	}
 	public static void main(String[] args) {
 		int result = smallestElement(new int[] {6,7,3,4,5});

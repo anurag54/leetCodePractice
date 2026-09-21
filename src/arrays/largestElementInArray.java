@@ -9,7 +9,7 @@ public class largestElementInArray {
 			}
 		}
 		return largest;
-		
+
 	}
 	public static void main(String[] args) {
 		int result = largestElement(new int[] {1,2,3,4,5});
