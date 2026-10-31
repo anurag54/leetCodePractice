@@ -13,7 +13,7 @@ public class duplicateElementsAndFrequencies {
 	public static void duplicateElementInArray(int[] arr){
 
 		HashMap<Integer, Integer> map = new HashMap<>();
-
+		
 		for(int i=0;i<arr.length;i++){
 			if(map.containsKey(arr[i])){
 				int freq = map.get(arr[i]);
@@ -33,4 +33,24 @@ public class duplicateElementsAndFrequencies {
 
 		}
 	}
+	
+	
+// LeetCode 287. Find the Duplicate Number	
+//	public int findDuplicate(int[] nums) {
+//
+//		HashMap<Integer,Integer> map = new HashMap<>();
+//
+//		for(int num : nums){
+//
+//			map.put(num, map.getOrDefault(num,0)+1);
+//
+//			if(map.get(num)>1){
+//				return num;
+//			}
+//
+//		}
+//
+//		return -1;
+//	}
+	
 }
