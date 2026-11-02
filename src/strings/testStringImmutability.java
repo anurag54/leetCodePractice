@@ -2,8 +2,6 @@ package strings;
 
 public class testStringImmutability {
 
-
-
 	public static void main(String[] args) {
 		String s1 = "Hello";
 		String s2 = s1; // Both reference the same object in the String Pool

@@ -11,7 +11,7 @@ public class twoSum {
 		
 	}
 	
-	//Two Sum II - Input array is sorted
+	//Two Sum II - Input array is sorted - LC167
 	  public static int[] twoSum(int[] numbers, int target) {
 	         int left=0;
 	        int right=numbers.length-1;
