@@ -30,7 +30,6 @@ public class duplicateElementsAndFrequencies {
 			//	System.out.println("Duplicate Elements: "+key);
 				System.out.println("Duplicate Elements: "+key+" "+"Frequency: "+value);
 			}
-
 		}
 	}
 	

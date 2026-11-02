@@ -3,7 +3,7 @@ package strings;
 import java.util.HashMap;
 import java.util.Map;
 
-public class lengthOfLongestSubString {
+public class longestSubstringWithoutRepeatingCharacters {
 
 	public static void main(String[] args) {
 		String s = "abcabcbb";
@@ -14,7 +14,7 @@ public class lengthOfLongestSubString {
 
 		Map<Character, Integer> map = new HashMap<>();
 
-		int left = 0; int maxLength = 0;
+		int left = 0; int maxLength = 0; int startIndex = 0;
 
 		for(int right = 0; right < s.length(); right++) {
 			char ch = s.charAt(right);
@@ -25,7 +25,17 @@ public class lengthOfLongestSubString {
 
 			map.put(ch, right);
 			maxLength = Math.max(maxLength, right - left + 1);
-		}
+			
+			 // Check if current window is the longest
+            if (right - left + 1 > maxLength) {
+                maxLength = right - left + 1;
+                startIndex = left;
+            }
+        }
+
+        String longestSubstring = s.substring(startIndex, startIndex + maxLength);
+        System.out.println("Longest Substring : " + longestSubstring);
+			
 		return maxLength;
 	}
 }
